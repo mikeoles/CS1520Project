@@ -11,7 +11,7 @@ body{
 }
 
 html{
-	font-family: "Trebuchet MS"
+  font-family: "Trebuchet MS"
 }
 
 #infoSection{
@@ -68,10 +68,10 @@ html{
 }
 
 .name{
-	text-align: center;
-	color:darkblue;
-	font-size: 1.9rem;
-	font-weight: bold;
+  text-align: center;
+  color:darkblue;
+  font-size: 1.9rem;
+  font-weight: bold;
 }
 
 .contactInfo{
@@ -83,12 +83,12 @@ nav{
 }
 
 nav ul{
-	list-style: none;
+  list-style: none;
 }
 
 nav ul li{
-	display: inline-block;
-	margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
   background-color: white;
   padding: 5px;
   border-radius: 5px;
@@ -96,11 +96,11 @@ nav ul li{
 }
 
 nav ul li:last-child{
-	margin-right: 0;
+  margin-right: 0;
 }
 
 nav ul li > a {
-	color: darkblue;
-	font-size: 1.5rem;
-	text-decoration: none;
+  color: darkblue;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
