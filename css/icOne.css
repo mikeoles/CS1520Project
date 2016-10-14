@@ -1,0 +1,35 @@
+body, html {
+  font-size: 62.5%%;
+	color: blue;
+  background-color: darkKhaki;
+}
+
+html{
+	font-family: "Trebuchet MS"
+}
+
+.name{
+	text-align: center;
+	color:darkblue;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+nav ul{
+	list-style: none;
+	text-align: center;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li:last-child{
+	margin-right: 0;
+}
+
+nav ul li > a {
+	color: blue;
+	font-size: 1.5rem;
+	text-decoration: none;
+}

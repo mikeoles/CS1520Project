@@ -1,0 +1,106 @@
+body, html {
+  font-family: 'century gothic';
+  font-size: 62.5%%;
+	color: blue;
+  background-color: #5f97ef;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
+html{
+	font-family: "Trebuchet MS"
+}
+
+#infoSection{
+  background-color: #ede634;
+  text-align: center;
+  padding: 40px;
+  margin-bottom: -30px;
+  display: block;
+  padding-bottom: 60px;
+}
+
+#logo{
+  height: 50px;
+}
+
+#resumeDocument a{
+  margin-left: 39%;
+  margin-top: 250px;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+
+#contactSection a{
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 3px solid white;
+  color: darkblue;
+  background-color: lightyellow;
+}
+
+#contactSection{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+#languagues{
+  display: block;
+  background-color: white;
+  margin-top: 0px;
+  padding-top:25px;
+  padding-bottom: 50px;
+}
+
+#languagues h2{
+  text-align: center;
+}
+
+.name{
+	text-align: center;
+	color:darkblue;
+	font-size: 1.9rem;
+	font-weight: bold;
+}
+
+.contactInfo{
+  text-align: center;
+}
+
+nav{
+  text-align: center;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+nav ul li:last-child{
+	margin-right: 0;
+}
+
+nav ul li > a {
+	color: darkblue;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
