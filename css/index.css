@@ -59,7 +59,7 @@ html{
   display: block;
   background-color: white;
   margin-top: 0px;
-  padding-top:25px;
+  padding-top: 25px;
   padding-bottom: 50px;
 }
 
@@ -69,7 +69,7 @@ html{
 
 .name{
   text-align: center;
-  color:darkblue;
+  color: darkblue;
   font-size: 1.9rem;
   font-weight: bold;
 }
