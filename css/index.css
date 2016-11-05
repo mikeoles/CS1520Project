@@ -27,9 +27,10 @@ html{
 }
 
 #resumeDocument a{
-  margin-left: 39%;
-  margin-top: 250px;
-  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  width: 350px;
+  display: block;
   font-size: 40px;
   font-weight: bold;
   color: white;
@@ -102,4 +103,26 @@ nav ul li > a {
   color: darkblue;
   font-size: 1.5rem;
   text-decoration: none;
+}
+
+.button {
+  width: 60px;
+  height: 30px;
+  background: lightgrey;
+  color: darkblue;
+  border-radius: 10px;
+}
+
+#formTitle{
+  display: block;
+  margin 0 auto;
+}
+
+.signup-form>form{
+  display: block;
+  margin: 0 auto;
+  background-color: lightgrey;
+  width: 500px;
+  text-align: center;
+  padding: 10px;
 }

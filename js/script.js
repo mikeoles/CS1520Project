@@ -8,4 +8,11 @@ $(document).ready(function(){
     $(this).children('a').css('color','darkblue');
   });
 
+  $('.signup-form').hide();
+
+  $('#formTitle').click(function(){
+    $('.signup-form').show();
+  });
+
+
 });

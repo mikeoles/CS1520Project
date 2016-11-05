@@ -13,13 +13,13 @@
       <nav>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.php">Home</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.php">Contact</a>
           </li>
           <li>
-            <a href="resume.html">Resume</a>
+            <a href="resume.php">Resume</a>
           </li>
         </ul>
       </nav>
@@ -52,6 +52,39 @@
       </p>
     </section>
 
+    <h2 id="formTitle">Send me a message</h2>
+
+    <div class="signup-form">
+      <form action="" method="POST" id="signupForm">
+
+        <fieldset>
+          <p class="warn" id=firstNameError></p>
+          <h2 class="form=title">Name</h2>
+          <input type="text" id="firstName"><br>
+        </fieldset>
+
+        <fieldset>
+          <p class="warn" id=companyError></p>
+          <h2 class="form=title">Company</h2>
+          <input type="text" id="company"><br>
+        </fieldset>
+
+        <fieldset>
+          <p class="warn"id=emailError></p>
+          <h2 class="form-title">Email</h2>
+          <input type="email" id="email">
+        </fieldset>
+
+        <fieldset>
+          <h2 class="form-title">Comment</h2>
+          <textarea rows="5" cols="50" id="TITLE"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Send" class="button">
+        <input type="reset" value="Clear" class="button">
+      </form>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </body>
