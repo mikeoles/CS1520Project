@@ -32,7 +32,11 @@
     </section>
 
     <div id="resumeDocument">
-      <a href="resume/MichaelOlesResume.docx" target='_blank' title="Resume"> View My Resume</a>
+      <a href="resume/MichaelOlesResume.docx" target='_blank' title="Resume">Download</a>
+    </div>
+
+    <div id="resumeEmbed">
+      <embed src="resume/Transcript.pdf" width="800px" height="1000px" />
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

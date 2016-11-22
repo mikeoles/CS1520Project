@@ -13,6 +13,11 @@ html{
   font-family: "Trebuchet MS"
 }
 
+li {
+    list-style-type: none;
+    font-size: 20px;
+}
+
 #infoSection{
   background-color: #ede634;
   text-align: center;
@@ -55,16 +60,41 @@ html{
   text-decoration: none;
 }
 
-#languagues{
-  display: block;
+.codeInfo{
   background-color: white;
-  margin-top: 0px;
-  padding-top: 25px;
-  padding-bottom: 50px;
 }
 
-#languagues h2{
+.codeInfo li{
+  margin: auto;
+  width: 50%;
+}
+
+.codeInfo h2{
   text-align: center;
+}
+
+.codeInfo {
+  float: left;
+  width: 100%;
+}
+
+.codeInfo section {
+  margin: 2%;
+  width: 45%;
+  float: left;
+  border-radius: 5px;
+  border: 5px solid black;
+}
+
+#resumeEmbed embed{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#projects{
+  background-color: lightgrey;
 }
 
 .name{
@@ -118,11 +148,24 @@ nav ul li > a {
   margin 0 auto;
 }
 
+#topSection h2{
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  border: 3px solid white;
+  width: 350px;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: lightgrey;
+}
+
 .signup-form>form{
   display: block;
   margin: 0 auto;
   background-color: lightgrey;
   width: 500px;
   text-align: center;
-  padding: 10px;
+  padding: 2px;
 }

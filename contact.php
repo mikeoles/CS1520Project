@@ -29,6 +29,9 @@
       <h1 class="name">
         Contact
       </h1>
+
+      <h2 id="formTitle">Send Message</h2>
+      <h2 id="altFormTitle">Cancel Message</h2>         
     </section>
 
     <section id="contactSection">
@@ -51,8 +54,6 @@
         <a href="https://linkedin.com/in/mikeoles" target="_top">LinkedIn.com/In/MikeOles</a>
       </p>
     </section>
-
-    <h2 id="formTitle">Send me a message</h2>
 
     <div class="signup-form">
       <form action="" method="POST" id="signupForm">
