@@ -65,8 +65,26 @@
           <li><i class="devicon-linux-plain colored"></i> Linux</li>
         </ul>
       </section>
+
     </section>
 
+    <br>
+    <section class="appear">
+      <img class="profile" class="appear" src="img/tryit.jpg" alt="Tryit" width="500px" height="500px">
+    </section>
+    <br>
+    <section class="appear">
+      <img class="profile" class="appear" src="img/avarint.jpg" alt="Avarint">
+    </section>
+    <br>
+    <section class="appear">
+      <img class="profile" class="appear" src="img/pennapps.png" alt="Pennapps">
+    </section>
+    <br>
+    <section class="appear">
+      <img class="profile" class="appear" src="img/bigidea.jpg" alt="Randall Big Idea">
+    </section>
+    <br>
     <footer>
       <p id="copyright">
         Michael Oles &copy 2016
