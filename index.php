@@ -96,17 +96,14 @@
 
       <section id="concepts" class="appear">
         <h2>Concepts</h2>
+
         <ul>
-          <li>Object Oriented Design</li>
-          <li>Data Structures</li>
-          <li>Operating Systems</li>
-          <li>Memory Allocation</li>
-          <li>Recursion</li>
-          <li>Searching/Sorting</li>
-          <li>Algorithms</li>
-          <li>Complexity</li>
-          <li>Reflection</li>
-          <li>Threading </li>
+          <?php
+            $concepts = array("Object Oriented Design","Data Structures","Operating Systems","Memory Allocation","Recursion","Searching/Sorting","Algorithms","Complexity","Reflection","Threading");
+            foreach($concepts as &$value){
+              echo "<li>" . $value . "</li>";
+            }
+          ?>
         </ul>
       </section>
 
