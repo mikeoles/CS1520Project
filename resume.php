@@ -6,6 +6,7 @@
     <meta content="author: Mike Oles">
     <title>Resume</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./img/icon.png">  
   </head>
 
   <body>

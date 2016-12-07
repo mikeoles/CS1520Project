@@ -6,6 +6,7 @@
     <meta content="author: Mike Oles">
     <title>Contact</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./img/icon.png">
   </head>
 
   <body>
@@ -31,8 +32,54 @@
       </h1>
 
       <h2 id="formTitle">Send Message</h2>
-      <h2 id="altFormTitle">Cancel Message</h2>         
+      <h2 id="altFormTitle">Cancel Message</h2>
     </section>
+
+    <div class="signup-form">
+      <form action="" method="POST" id="signupForm">
+
+        <fieldset>
+          <p class="warn" id=firstNameError></p>
+          <h2 class="form=title">Name</h2>
+          <input type="text" id="name" name="name"><br>
+        </fieldset>
+
+        <fieldset>
+          <p class="warn" id=companyError></p>
+          <h2 class="form=title">Company</h2>
+          <input type="text" id="company"><br>
+        </fieldset>
+
+        <fieldset>
+          <p class="warn"id=emailError></p>
+          <h2 class="form-title">Email</h2>
+          <input type="email" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+          <h2 class="form-title">Comment</h2>
+          <textarea rows="5" cols="50" id="comment" name="comment"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" name="submit" value="Send" class="button">
+        <input type="reset" value="Clear" class="button">
+      </form>
+    </div>
+
+    <?php
+    if(isset($_POST['submit'])){
+        $to = "oles@live.com";
+        $from = $_POST['email'];
+        $name = $_POST['name'];
+        $subject = "New Website comment";
+        $message = "From: " . $name . "\n\n" . $_POST['comment'];
+        $headers = "From:" . $from;
+
+        mail($to,$subject,$message,$headers);
+        echo "Thank You! Message Sent";
+        }
+    ?>
 
     <section id="contactSection">
       <h3 class="contactInfo">
@@ -55,37 +102,6 @@
       </p>
     </section>
 
-    <div class="signup-form">
-      <form action="" method="POST" id="signupForm">
-
-        <fieldset>
-          <p class="warn" id=firstNameError></p>
-          <h2 class="form=title">Name</h2>
-          <input type="text" id="firstName"><br>
-        </fieldset>
-
-        <fieldset>
-          <p class="warn" id=companyError></p>
-          <h2 class="form=title">Company</h2>
-          <input type="text" id="company"><br>
-        </fieldset>
-
-        <fieldset>
-          <p class="warn"id=emailError></p>
-          <h2 class="form-title">Email</h2>
-          <input type="email" id="email">
-        </fieldset>
-
-        <fieldset>
-          <h2 class="form-title">Comment</h2>
-          <textarea rows="5" cols="50" id="TITLE"></textarea>
-        </fieldset>
-
-        <br>
-        <input type="submit" value="Send" class="button">
-        <input type="reset" value="Clear" class="button">
-      </form>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </body>

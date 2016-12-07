@@ -5,6 +5,7 @@
     <meta content="author: Mike Oles">
     <title>Mike Oles Website</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./img/icon.png">
   </head>
 
   <body>
@@ -30,13 +31,14 @@
         Michael Oles
       </h1>
       <img id="logo" src="img/logo.png" alt="Pitt">
-      <p class="myInfo">
-        -University of Pitsburgh <br>
-        -Graduating Spring 2017 <br>
-        -Bachelors In Computer Science <br>
-        -Minor In Fitness <br>
+      <ul class="myInfo">
+        <li>University of Pitsburgh </li>
+        <li>Graduating Spring 2017 </li>
+        <li>Bachelors In Computer Science </li>
+        <li>Minor In Fitness </li>
       </p>
       <img class="profile" src="img/profile.jpg" alt="Michael Oles">
+      <img class="profile" src="img/profile2.jpg" alt="Michael Oles">
     </section>
 
     <section class="codeInfo" class="appear">
@@ -66,25 +68,75 @@
         </ul>
       </section>
 
+      <section id="courses" class="appear">
+        <h2>Courses Taken</h2>
+        <ul>
+          <?php
+            $user = 'root';
+            $pass = '';
+            $db_name = 'coursework';
+
+            $db = new mysqli('localhost',$user,$pass,$db_name) or die("Unable to connect");
+
+            $sql = "SELECT Name FROM courses";
+            $result = $db->query($sql);
+
+            if($result->num_rows > 0){
+              while($row = $result->fetch_assoc()){
+                echo "<li>" . $row["Name"] . " </li>";
+              }
+            }else{
+              echo "No courses taken";
+            }
+
+            $db->close();
+          ?>
+        </ul>
+      </section>
+
+      <section id="concepts" class="appear">
+        <h2>Concepts</h2>
+        <ul>
+          <li>Object Oriented Design</li>
+          <li>Data Structures</li>
+          <li>Operating Systems</li>
+          <li>Memory Allocation</li>
+          <li>Recursion</li>
+          <li>Searching/Sorting</li>
+          <li>Algorithms</li>
+          <li>Complexity</li>
+          <li>Reflection</li>
+          <li>Threading </li>
+        </ul>
+      </section>
+
     </section>
 
-    <br>
-    <section class="appear">
-      <img class="profile" class="appear" src="img/tryit.jpg" alt="Tryit" width="500px" height="500px">
+    <section id="experience">
+
+      <h2>Experience</h2>
+      <div class="appear">
+        <h3>Avarint: Software Engineer Intern</h3>
+        <img class="profile" class="appear" src="img/avarint.jpg" alt="Avarint">
+      </div>
+      <div class="appear">
+        <h3>Pitt Computing Services: Computer Lab Consultant</h3>
+        <img class="profile" class="appear" src="img/seal.jpg" alt="Cssd" width="500px" height="500px">
+      </div>
+      <div class="appear">
+        <h3>Try-It Distributing: Merchandiser</h3>
+        <img class="profile" class="appear" src="img/tryit.jpg" alt="Tryit" width="500px" height="500px">
+      </div>
+      <div class="appear">
+        <h3>Pennapps Hackathon</h3>
+        <img class="profile" class="appear" src="img/pennapps.png" alt="Pennapps">
+      </div>
+      <div class="appear">
+        <h3>Randall Big Idea Competition Finalist</h3>
+        <img class="profile" class="appear" src="img/bigidea.jpg" alt="Randall Big Idea">
+      </div>
     </section>
-    <br>
-    <section class="appear">
-      <img class="profile" class="appear" src="img/avarint.jpg" alt="Avarint">
-    </section>
-    <br>
-    <section class="appear">
-      <img class="profile" class="appear" src="img/pennapps.png" alt="Pennapps">
-    </section>
-    <br>
-    <section class="appear">
-      <img class="profile" class="appear" src="img/bigidea.jpg" alt="Randall Big Idea">
-    </section>
-    <br>
+
     <footer>
       <p id="copyright">
         Michael Oles &copy 2016

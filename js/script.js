@@ -13,7 +13,7 @@ $(document).ready(function(){
   $('#altFormTitle').hide();
 
   $('#formTitle').click(function(){
-    $('.signup-form').show();
+    $('.signup-form').slideDown();
   });
 
   $('#formTitle').click(function () {
@@ -37,6 +37,7 @@ $(document).ready(function(){
       location.reload();
   });
 
+  //Makes items appear on scroll down
   $(window).scroll(function() {
     $(".appear").each(function() {
       var objectBottom = $(this).offset().top + $(this).outerHeight();
@@ -47,6 +48,6 @@ $(document).ready(function(){
         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
       }
     });
-  }); $(window).scroll(); 
+  }); $(window).scroll();
 
 });
