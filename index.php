@@ -39,6 +39,27 @@
       </p>
       <img class="profile" src="img/profile.jpg" alt="Michael Oles">
       <img class="profile" src="img/profile2.jpg" alt="Michael Oles">
+      <h3>Where I've Lived</h3>
+      <div id="map"></div>
+      <script>
+        function initMap() {
+          var pitt = {lat: 40.437, lng: -79.957};
+          var buffalo = {lat: 42.987919, lng: -78.702607};
+          var middle = {lat: 41.5, lng: -79.3}
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 6,
+            center: middle
+          });
+          var marker = new google.maps.Marker({
+            position: pitt,
+            map: map
+          });
+          var marker = new google.maps.Marker({
+            position: buffalo,
+            map: map
+          });
+        }
+      </script>
     </section>
 
     <section class="codeInfo" class="appear">
@@ -142,5 +163,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6HoxAssIjgdTcSjwhQ8sOlIcYVSkbu30&callback=initMap">
+    </script>
   </body>
 </html>
