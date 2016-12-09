@@ -19,4 +19,4 @@ I used php and mysql server on xampp to store the data from my past coursework a
 php to store the list of previous concepts I've learned in an array and then added that to a div on the page.  Since I used xampp to create the sql database i'm not sure if it will work based on what i've uploaded to github without xampp.
 
 On my resume page I added the functionality of having my resume as a pdf embedded in the webpage as well as a link for the 
-user to download
+user to download.  I also used the google api for maps to create a google map in javascript showing the locations that I've lived at.
