@@ -16,7 +16,7 @@ This does not work yet because it is not being hosted but when I do get this web
 work.
 
 I used php and mysql server on xampp to store the data from my past coursework and add it to the homepage.  I also used 
-php to store the list of previous concepts I've learned in an array and then added that to a div on the page.
+php to store the list of previous concepts I've learned in an array and then added that to a div on the page.  Since I used xampp to create the sql database i'm not sure if it will work based on what i've uploaded to github without xampp.
 
 On my resume page I added the functionality of having my resume as a pdf embedded in the webpage as well as a link for the 
 user to download
